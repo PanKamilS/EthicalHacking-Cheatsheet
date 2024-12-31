@@ -1,4 +1,4 @@
-# Extensive Ethical Hacking Cheatsheet
+# Ethical Hacking Cheatsheet
 
 ## Table of Contents
 

